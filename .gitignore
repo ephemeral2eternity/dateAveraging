@@ -45,6 +45,11 @@ coverage.xml
 *,cover
 .hypothesis/
 
+# Ingoring pycharm files
+.idea/
+
+# Ingoreing result files
+rsts/
 # Translations
 *.mo
 *.pot
