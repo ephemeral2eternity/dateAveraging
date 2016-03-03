@@ -17,8 +17,10 @@ def search_twitter_records(twitter_list, searchWin, searchDate, searchTicker):
 
 
 recom_file = "/home/chenw/data/recom.csv"
-twitter_file = "/home/chenw/data/twitter_retweets.csv"
-outfile = "/home/chenw/data/merged.csv"
+twitter_file = "/home/chenw/data/twitter_noretweets.csv"
+# twitter_file = "/home/chenw/data/twitter_retweets.csv"
+outfile = "/home/chenw/data/recom_noretweets_merged.csv"
+# outfile = "/home/chenw/data/merged.csv"
 
 recom_list = loadCSV2List(recom_file)
 twitter_list = loadCSV2List(twitter_file)
