@@ -16,9 +16,9 @@ def search_twitter_records(twitter_list, searchWin, searchDate, searchTicker):
     return searched_items
 
 
-recom_file = "D://Box Sync/Data processing/recom.csv"
-twitter_file = "D://Box Sync/Data processing/twitter_retweets.csv"
-outfile = "D://GitHub/dateAveraging/rsts/merged.csv"
+recom_file = "/home/chenw/data/recom.csv"
+twitter_file = "/home/chenw/data/twitter_retweets.csv"
+outfile = "/home/chenw/data/merged.csv"
 
 recom_list = loadCSV2List(recom_file)
 twitter_list = loadCSV2List(twitter_file)
@@ -35,7 +35,7 @@ new_fields = ["NEWDATE", "OFFDAY", "RECOMSCALE", "CONSISTENCY"]
 output_fields = output_recom_fields + output_twitter_fields + new_fields
 
 ## Create csvfile
-with open(outfile, 'w') as out_csv_file:
+with open(outfile, 'wb') as out_csv_file:
     out_csv_writer = csv.DictWriter(out_csv_file, fieldnames=output_fields)
     out_csv_writer.writeheader()
 
