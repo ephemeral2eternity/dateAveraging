@@ -5,7 +5,8 @@ def search_twitter_records(twitter_list, searchWin, searchDate, searchTicker):
     searched_items = []
     for twitter_item in twitter_list:
         cur_date_str = twitter_item["asof_date"]
-        cur_date = datetime.strptime(cur_date_str, "%m/%d/%Y")
+        # cur_date = datetime.strptime(cur_date_str, "%m/%d/%Y")
+        cur_date = datetime.strptime(cur_date_str, "%Y-%m-%d")
         date_delta = searchDate - cur_date
 
         cur_ticker = twitter_item["symbol"]
