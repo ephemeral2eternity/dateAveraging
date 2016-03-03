@@ -80,7 +80,7 @@ with open(outfile, 'w') as out_csv_file:
             recom_scale = 0
         else:
             recom_scale = -1
-        new_item[offdayField] = recom_scale
+        new_item[recomscaleField] = recom_scale
 
         ## Copy recom fields
         for recom_field in output_recom_fields:
